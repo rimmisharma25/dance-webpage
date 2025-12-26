@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #044252;
+    color: rgb(17, 16, 16);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #1d0b61;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+                url("https://thumbs.dreamstime.com/b/empty-urban-industrial-bar-venue-stage-colorful-lighting-empty-urban-industrial-bar-venue-stage-colorful-388958164.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #044252;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Dance Styles */
+.styles {
+    padding: 50px;
+    text-align: center;
+}
+
+.subtitle {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: black;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Videos */
+.videos {
+    padding: 50px;
+    background-image: url("data:image/jpeg;base64,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");
+    text-align: center;
+    color:rgb(12, 12, 12);
+
+}
+
+.subtitle {
+    
+     color:rgb(14, 13, 14);
+}
+
+.video-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 300px;
+    color:white;
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* About */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+p {
+    font-family: italic;
+}
+
+/* Contact */
+
+.contact {
+    padding: 40px;
+    background: #044252;
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: rgb(10, 10, 10);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
